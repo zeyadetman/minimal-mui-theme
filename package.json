@@ -1,15 +1,15 @@
 {
   "name": "mui-minimal-theme",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
-  "main": "./lib/cjs/index.js",
-  "module": "./lib/esm/index.js",
-  "types": "./lib/esm/index.d.ts",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
-    "build": "yarn build:esm && yarn build:cjs",
+    "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "prepare": "npm run build",
@@ -22,7 +22,7 @@
     "react": ">=16"
   },
   "files": [
-    "/dist"
+    "dist"
   ],
   "devDependencies": {
     "@types/react": "^18.2.0",

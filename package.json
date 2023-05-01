@@ -1,6 +1,6 @@
 {
   "name": "mui-minimal-theme",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "./dist/cjs/index",
   "module": "./dist/esm/index.js",

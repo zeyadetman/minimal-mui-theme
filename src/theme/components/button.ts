@@ -11,6 +11,13 @@ export const MuiButton: muiButton = {
     variant: 'contained',
     color: 'primary',
   },
+  styleOverrides: {
+    root: {
+      '& .MuiInputLabel-shrink': {
+        transform: 'translate(0, 1.5px) scale(0.75)',
+      },
+    },
+  },
   variants: [
     {
       props: { variant: 'contained' },
